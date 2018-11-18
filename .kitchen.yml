@@ -10,8 +10,8 @@
     require_ruby_for_busser: false
     ansible_verbose: true
     ansible_verbosity: 3
-    playbook: tasks/playbook.yml
-    roles_path: ../cloud_ansible
+    playbook: ../cloud_ansible/playbook.yml
+    roles_path: ../cloud_ansible/roles/common/
 
   platforms:
     - name: ubuntu-16.04
