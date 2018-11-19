@@ -65,7 +65,7 @@
         create: yes
         state: present
         
-    - name: Disable protocol version 1 and enable version 2
+    - name: Disable protocol version 1 and enable version 2 for SSH
       lineinfile:
         dest: /etc/ssh/sshd_config
         regexp: 'Protocol'
@@ -83,5 +83,5 @@
         
     - name: Create Template for MOTD
       template:
-        src: create_motd.j2
+        src: motd.j2
         dest: /etc/motd
