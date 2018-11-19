@@ -1,4 +1,7 @@
-# cloud_ansible
+# Cloud Ansible
 
-TODO: Enter the cookbook description here.
+Commands:
 
+kitchen list - show the platform options
+kitchen create - {platform name from kitchen list}
+kitchen converge - run the scripts
